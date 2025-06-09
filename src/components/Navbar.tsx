@@ -32,7 +32,7 @@ export const Navbar = () => {
   }
 
   return (
-    <nav className="my-5 h-18 rounded-2xl bg-[#383838] px-3 md:px-6">
+    <nav className="relative z-50 my-5 h-18 rounded-2xl bg-[#383838] px-3 md:px-6">
       <motion.div
         initial="hidden"
         animate="visible"
@@ -77,7 +77,7 @@ export const Navbar = () => {
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.4, ease: easeInOut }}
             className={cn(
-              "font-nasa mt-2 flex flex-col items-center justify-center rounded-2xl bg-[#383838] p-8 text-white md:hidden",
+              "font-nasa z-50 mt-2 flex flex-col items-center justify-center rounded-2xl bg-[#383838] p-8 text-white md:hidden",
             )}
           >
             <ul className="space-y-3 text-center">
