@@ -6,6 +6,7 @@ import { easeInOut, motion } from "motion/react";
 export const Hero = () => {
   const text =
     "Visual & UI/UX Designer based in Lagos, crafting smooth interfaces and bold visual stories. I bring ideas to life through intentional design, vibrant aesthetics, and user-focused solutions.";
+
   return (
     <motion.section
       initial={{
@@ -28,7 +29,7 @@ export const Hero = () => {
         <img
           src={mask}
           alt="hero-img"
-          className="h-full w-full bg-cover bg-center"
+          className="h-full w-full bg-cover bg-center lg:w-[30rem] xl:w-full"
         />
 
         <motion.a

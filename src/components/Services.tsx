@@ -133,7 +133,7 @@ export const Services = () => {
         initial={{ opacity: 0, y: 60 }}
         animate={isExpInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.6 }}
-        className="mt-10 hidden items-center justify-center md:flex lg:mt-20"
+        className="mt-10 hidden items-center justify-center md:flex lg:mt-30"
       >
         {/* Left */}
         <div
