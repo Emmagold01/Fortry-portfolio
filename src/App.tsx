@@ -1,4 +1,5 @@
 import "./App.css";
+import { Contact } from "./components/Contact";
 import { Hero } from "./components/Hero";
 import { Navbar } from "./components/Navbar";
 import { Portfolio } from "./components/Portfolio";
@@ -24,6 +25,10 @@ function App() {
 
       <div className="rounded-[50px] bg-[#e6e8ff] lg:rounded-t-[5rem]">
         <Portfolio />
+      </div>
+
+      <div className="bg-[#001948]">
+        <Contact />
       </div>
     </>
   );
