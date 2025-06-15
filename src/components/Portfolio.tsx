@@ -142,7 +142,7 @@ export const Portfolio = () => {
             </div>
 
             {/* Slider */}
-            <div className="flex space-x-4 lg:pl-14 xl:space-x-6 xl:pl-40">
+            <div className="flex space-x-4 md:pl-18 lg:pl-14 xl:space-x-6 xl:pl-40">
               {showGoBackButton && (
                 <button onClick={prev} className="cursor-pointer xl:pr-5">
                   <img
