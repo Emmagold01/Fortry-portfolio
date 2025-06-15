@@ -190,7 +190,7 @@ export const Contact = () => {
               placeholder="Message"
               value={user.message}
               onChange={handleMessage}
-              className="h-[135px] w-full resize-none rounded-[7px] bg-[#d9d9d9] p-5 text-[10px] font-medium outline-0 md:h-[190px] md:w-[360px] md:text-[13px] lg:h-[258px] lg:w-[593px] lg:rounded-[12px] lg:text-[17px]"
+              className="h-[135px] w-full resize-none rounded-[7px] bg-[#d9d9d9] p-5 text-[10px] font-medium outline-0 md:h-[190px] md:w-[360px] md:text-[13px] lg:h-[258px] lg:w-[453px] lg:rounded-[12px] lg:text-[17px] xl:w-[593px]"
             ></textarea>
 
             <div className="absolute bottom-3 left-2 lg:bottom-4 lg:left-4">

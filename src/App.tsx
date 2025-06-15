@@ -65,11 +65,11 @@ function App() {
         <Portfolio />
       </div>
 
-      <div className="rounded-b-[10px] bg-[#001948] md:rounded-b-[20px] lg:rounded-b-[50px]">
+      <div className="bg-[#001948]">
         <Contact />
       </div>
 
-      <div className="md:max-w-8xl px-5 md:mx-auto md:px-10 lg:px-15">
+      <div className="">
         <Footer />
       </div>
     </>
