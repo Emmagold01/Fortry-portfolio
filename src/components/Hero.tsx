@@ -36,7 +36,7 @@ export const Hero = () => {
           whileTap={{
             scale: 0.8,
           }}
-          href="/public/FORTRY RESUME.pdf"
+          href="/FORTRY_RESUME.pdf"
           target="_blank"
           className="font-poppins absolute bottom-3 left-[2rem] flex items-center space-x-1 font-semibold md:bottom-5 md:left-[6rem] md:text-lg lg:left-[3rem] xl:left-[6rem] xl:text-xl"
         >
