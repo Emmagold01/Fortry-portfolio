@@ -100,14 +100,14 @@ export const Contact = () => {
         className="relative space-y-3 pt-5 pb-2 lg:space-y-8 lg:pt-9"
       >
         {/* Row 1 */}
-        <div className="flex items-center space-x-5 lg:space-x-10 xl:space-x-16">
+        <div className="flex flex-col items-center space-y-4 md:flex-row md:space-y-0 md:space-x-5 lg:space-x-10 xl:space-x-16">
           <input
             type="text"
             name="firstname"
             placeholder="Firstname"
             value={user.firstname}
             onChange={handleFirstname}
-            className="h-[34px] w-[185px] rounded-[7px] bg-[#d9d9d9] p-5 text-[10px] font-medium outline-0 md:h-[50px] md:w-[400px] md:text-[15px] lg:h-[74px] lg:w-[593px] lg:rounded-[12px] lg:text-[24px]"
+            className="h-[34px] w-full rounded-[7px] bg-[#d9d9d9] p-5 text-[10px] font-medium outline-0 md:h-[50px] md:w-[400px] md:text-[15px] lg:h-[74px] lg:w-[593px] lg:rounded-[12px] lg:text-[24px]"
           />
           <input
             type="text"
@@ -115,23 +115,23 @@ export const Contact = () => {
             placeholder="Lastname"
             value={user.lastname}
             onChange={handleLastname}
-            className="h-[34px] w-[186px] rounded-[7px] bg-[#d9d9d9] p-5 text-[10px] font-medium outline-0 md:h-[50px] md:w-[400px] md:text-[15px] lg:h-[74px] lg:w-[593px] lg:rounded-[12px] lg:text-[24px]"
+            className="h-[34px] w-full rounded-[7px] bg-[#d9d9d9] p-5 text-[10px] font-medium outline-0 md:h-[50px] md:w-[400px] md:text-[15px] lg:h-[74px] lg:w-[593px] lg:rounded-[12px] lg:text-[24px]"
           />
         </div>
 
         {/* Row 2 */}
-        <div className="flex space-x-5 lg:space-x-10 xl:space-x-16">
+        <div className="flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-5 lg:space-x-10 xl:space-x-16">
           {/* Email + icons */}
-          <div className="flex flex-col space-y-3 md:space-y-5 lg:space-y-6">
+          <div className="flex flex-col md:space-y-5 lg:space-y-6">
             <input
               type="email"
               name="email"
               placeholder="Email"
               value={user.email}
               onChange={handleEmail}
-              className="h-[33px] w-[185px] rounded-[7px] bg-[#d9d9d9] p-5 text-[10px] font-medium outline-0 md:h-[50px] md:w-[335px] md:text-[15px] lg:h-[74px] lg:w-[450px] lg:rounded-[12px] lg:text-[24px] xl:w-[593px]"
+              className="h-[33px] w-full rounded-[7px] bg-[#d9d9d9] p-5 text-[10px] font-medium outline-0 md:h-[50px] md:w-[360px] md:text-[15px] lg:h-[74px] lg:w-[450px] lg:rounded-[12px] lg:text-[24px] xl:w-[593px]"
             />
-            <div className="flex items-center space-x-4 md:space-x-9 lg:space-x-10 lg:pl-4 xl:space-x-15">
+            <div className="hidden items-center space-x-4 md:flex md:space-x-9 lg:space-x-10 lg:pl-4 xl:space-x-15">
               <a href="mailto:ufotvictory21@gmail.com" target="_blank">
                 <img
                   src={socials1}
@@ -184,23 +184,75 @@ export const Contact = () => {
           </div>
 
           {/* Message + button */}
-          <div className="relative w-[186px] md:w-[400px] lg:w-[593px]">
+          <div className="relative w-full">
             <textarea
               name="message"
               placeholder="Message"
               value={user.message}
               onChange={handleMessage}
-              className="h-[135px] w-full resize-none rounded-[7px] bg-[#d9d9d9] p-5 text-[10px] font-medium outline-0 md:h-[190px] md:text-[13px] lg:h-[258px] lg:rounded-[12px] lg:text-[17px]"
+              className="h-[135px] w-full resize-none rounded-[7px] bg-[#d9d9d9] p-5 text-[10px] font-medium outline-0 md:h-[190px] md:w-[360px] md:text-[13px] lg:h-[258px] lg:w-[593px] lg:rounded-[12px] lg:text-[17px]"
             ></textarea>
 
             <div className="absolute bottom-3 left-2 lg:bottom-4 lg:left-4">
               <button
                 type="submit"
-                className="cursor-pointer rounded-md bg-[#001948] px-3 py-2 text-[7px] text-white lg:px-6 lg:py-2 lg:text-[15px]"
+                className="cursor-pointer rounded-md bg-[#001948] px-6 py-2 text-[7px] text-white lg:px-6 lg:py-2 lg:text-[15px]"
               >
                 Send
               </button>
             </div>
+          </div>
+
+          {/* Mobile socials */}
+          <div className="flex items-center justify-center space-x-9 md:hidden">
+            <a href="mailto:ufotvictory21@gmail.com" target="_blank">
+              <img
+                src={socials1}
+                alt="Mail"
+                className="h-[15px] w-[21px] md:h-[15px] md:w-[20px] lg:h-[30px] lg:w-[41px]"
+              />
+            </a>
+            <a href="https://wa.me/2348144721332" target="_blank">
+              <img
+                src={socials2}
+                alt="whatsapp"
+                className="h-[19px] w-[19px] md:h-[20px] md:w-[20px] lg:h-[34px] lg:w-[34px]"
+              />
+            </a>
+            <a href="https://pin.it/E72xY5WxQ" target="_blank">
+              <img
+                src={socials3}
+                alt="pinterest"
+                className="h-[19px] w-[19px] md:h-[20px] md:w-[20px] lg:h-[34px] lg:w-[34px]"
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/ufot-victory-920292241?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              target="_blank"
+            >
+              <img
+                src={socials4}
+                alt="linkedIn"
+                className="h-[19px] w-[19px] md:h-[20px] md:w-[20px] lg:h-[34px] lg:w-[34px]"
+              />
+            </a>
+            <a
+              href="https://www.instagram.com/_fortry?igsh=Zml2NzNhb2hiNXZn"
+              target="_blank"
+            >
+              <img
+                src={socials5}
+                alt="Instagram "
+                className="h-[19px] w-[19px] md:h-[20px] md:w-[20px] lg:h-[34px] lg:w-[34px]"
+              />
+            </a>
+            <a href="https://www.behance.net/ufotvictory" target="_blank">
+              <img
+                src={socials6}
+                alt="behance"
+                className="h-[19px] w-[29px] md:h-[20px] md:w-[31px] lg:h-[32px] lg:w-[51px]"
+              />
+            </a>
           </div>
         </div>
       </motion.form>
