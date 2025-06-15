@@ -4,26 +4,26 @@ import { cn } from "./lib/utils.ts";
 import { easeInOut, motion, AnimatePresence } from "motion/react";
 import { useState } from "react";
 
-const listVariants = {
-  hidden: { opacity: 0, y: -10 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      staggerChildren: 0.3,
-      ease: easeInOut,
-      duration: 0.7,
-    },
-  },
-};
-
-const itemVariants = {
-  hidden: { opacity: 0, y: -10 },
-  visible: { opacity: 1, y: 0 },
-};
-
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const listVariants = {
+    hidden: { opacity: 0, y: -10 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        staggerChildren: 0.3,
+        ease: easeInOut,
+        duration: 0.7,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: -10 },
+    visible: { opacity: 1, y: 0 },
+  };
 
   const navLinks = ["About", "Services", "Portfolio", "Contact"];
 
